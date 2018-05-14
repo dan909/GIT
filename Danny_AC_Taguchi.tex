@@ -2,7 +2,7 @@
 
 \usetheme[progressbar=frametitle]{metropolis}
 \usepackage{appendixnumberbeamer}
-
+\usepackage{smartdiagram}
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
 \usepackage{tabto}
@@ -72,21 +72,58 @@ Some of this is solved in programs like word with track changes (so you see who 
 
 \begin{frame}[fragile]{What version control systems can do}
 	\begin{itemize}
-		\item There are multiple documents that need to work together (i.e. a script and data)
-		\item There are multiple people working on the documents (are they on the latist vertion and merging changes)
-		\item There are updates to the progect that may brake things
-		\item Line changes need to be reviewed
+		\item Give line by line user by user line changes
+		\item Make a stucher to vershons so there can be side branches
+		\item Minimise problems of multiple users working on the same document at the same time
 	\end{itemize}
+	\includegraphics[width=11cm]{Figs/GHD/change}
 \end{frame}
 
-\begin{frame}[fragile]{What version control systems can do}
+
+\begin{frame}[fragile]{What version control systems can't do}
 	\begin{itemize}
-		\item There are multiple documents that need to work together (i.e. a script and data)
-		\item There are multiple people working on the documents (are they on the latist vertion and merging changes)
-		\item There are updates to the progect that may brake things
-		\item Line changes need to be reviewed
+		\item Add much extra control to binary files (not plan text)
+		\item Back up in real time
 	\end{itemize}
+	\includegraphics[width=11cm]{Figs/GHD/binarychange}
 \end{frame}
+
+
+
+\section{Version control system}
+
+
+\begin{frame}[fragile]{What version control system?}
+The first thing about version control systems is which system (we will cover git) \\
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+	\smartdiagram[circular diagram:clockwise]{
+ 	System, storage/ platform, UI/interface}
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/Git-logo}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]{What version control system?}
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+	\begin{itemize}
+		\item There are two populer version control systems (git  SVN)
+		\item We will cover git as it is the most populer, the one I know and easyist to use
+		\item Git was developed in 2005 by Linus Torvalds (Principal developer of Linux)
+  		\includegraphics[width=2cm]{Figs/Linus_Torvalds}
+	\end{itemize}
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/SVN} \newline \newline
+	\includegraphics[width=2cm]{Figs/Git-logo}
+    \end{column}
+  \end{columns}
+\end{frame}
+
 
 
 %\begin{frame}[fragile]{Used\dots}
