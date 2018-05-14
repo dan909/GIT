@@ -97,8 +97,8 @@ Some of this is solved in programs like word with track changes (so you see who 
 The first thing about version control systems is which system (we will cover git) \\
   \begin{columns}[T]
     \begin{column}{.8\textwidth}
-	\smartdiagram[circular diagram:clockwise]{
- 	System, storage/ platform, UI/interface}
+	\smartdiagram[bubble diagram]{Effective\\ version\\ control,
+ 	System, Storage/\\platform, UI/\\interface}
     \end{column}
     \begin{column}{.2\textwidth}
 	\includegraphics[width=2cm]{Figs/Git-logo}
@@ -123,6 +123,76 @@ The first thing about version control systems is which system (we will cover git
     \end{column}
   \end{columns}
 \end{frame}
+
+
+\begin{frame}[fragile]{What is git?}
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/Git-logo}
+    \end{column}
+  \end{columns}
+	\begin{itemize}
+		\item Git is just system of version control
+		\item By default it is used through a terminal
+		\includegraphics[width=4cm]{Figs/git/status}
+		\item Git has progects cauld reposetrys (or repos)
+		\item It then has a tree struchure to manige the vershons
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Tree structure?}
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+	\includegraphics[width=9cm]{Figs/git/tree}
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/Git-logo} \newline  \newline
+	The master branch is in gray with colour branches coming of and then being merged back
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]{Key comards?}
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+	In the terminal interface there are some useful commards:
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/Git-logo}
+    \end{column}
+  \end{columns}
+	\begin{itemize}
+		\item \textit{init} - inisholies a repo
+		\item \textit{status} - tells you if you have flies out of sync with the current vertion
+		\item \textit{commit} - adds new files and changes to the current vertion
+		\item \textit{push} - pushes comits to an online repo (only if using a git platform)
+		\item \textit{pull} - pulls commits from an online platform (only if using a git platform)
+	\end{itemize}
+\end{frame}
+
+
+
+\section{Platform}
+
+
+\begin{frame}[fragile]{What platform?}
+You can just use git with the treminal on your PC or you can store work on an online reposetry mainging site, the most populer of these are GitHub and Bitbucket\\
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+	\smartdiagram[bubble diagram]{Effective\\ version\\ control,
+ 	System, Storage/\\platform, UI/\\interface}
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/git/Octocat} \newline  \newline   \newline 
+	\includegraphics[width=2cm]{Figs/git/Bitbucket}
+    \end{column}
+  \end{columns}
+\end{frame}
+
 
 
 
@@ -574,12 +644,14 @@ The first thing about version control systems is which system (we will cover git
 %\end{frame}
 
 
-
-{\setbeamercolor{palette primary}{fg=green, bg=black}
+{%
+\setbeamertemplate{frame footer}{(xkcd)}
+{\setbeamercolor{palette primary}{fg=gray, bg=gray}
 \begin{frame}[standout]
-  Questions?
+  \includegraphics[width=6.5cm]{Figs/xkcd}
 \end{frame}
 }
+
 
 \appendix
 
