@@ -27,7 +27,7 @@
 \maketitle
 
 
-
+\setbeamertemplate{frame footer}{ }
 \begin{frame}{Sections}
 This will focus on using git in windows with a UI
 \newline
@@ -72,7 +72,7 @@ Some of this is solved in programs like word with track changes (so you see who 
 
 \begin{frame}[fragile]{What version control systems can do}
 \begin{itemize}
-\item Give line by line user by user line changes
+\item Give line by line changes linked to a user (which are keeped forever)
 \item Makes a stretcher to the version control so there can be side branches (this is where the project can take a detour and be merged back in later)
 \item Minimise problems of multiple users working on the same document at the same time
 \end{itemize}
@@ -185,7 +185,7 @@ In the terminal interface there are some useful commands:
 \end{frame}
 }
 
-
+\setbeamertemplate{frame footer}{ }
 \section{Platform}
 
 
@@ -260,8 +260,8 @@ You can just use git with the terminal but there is a friendlier interface\\
 System, Storage/\\platform, UI/\\interface}
 \end{column}
 \begin{column}{.2\textwidth}
-\includegraphics[width=2cm]{Figs/git/terminal} \newline \newline \newline 
-\includegraphics[width=2cm]{Figs/git/gitdesktop} \newline \newline \newline 
+\includegraphics[width=2cm]{Figs/git/terminal} \newline \newline
+\includegraphics[width=2cm]{Figs/git/gitdesktop} \newline \newline
 \includegraphics[width=2cm]{Figs/git/Sourcetree}
 \end{column}
 \end{columns}
@@ -494,31 +494,36 @@ Following is a brief demonstration of the interface
 \end{frame}
 
 \begin{frame}[fragile]{Using the repository}
-\small switch to another repository
+\small Switch to another repository
 \includegraphics[width=12cm]{Figs/GHD/outline_05}
 \end{frame}
 
 \begin{frame}[fragile]{Using the repository}
-\small look at the history of this repository
+\small Look at the history of this repository
 \includegraphics[width=12cm]{Figs/GHD/outline_06}
 \end{frame}
 
 \begin{frame}[fragile]{Using the repository}
-\small look at the history of this repository
+\small Look at the history of this repository
 \includegraphics[width=12cm]{Figs/GHD/hist_00}
 \end{frame}
 
 
 \begin{frame}[fragile]{Using the repository}
-\small we can carry on making local commits or publish the repository to GitHub
+\small Or look at how the files have changed from the records (same as \textit{git status})
 \includegraphics[width=12cm]{Figs/GHD/outline_07}
 \end{frame}
 
+
 \begin{frame}[fragile]{Using the repository}
-\small we can carry on making local commits or publish the repository to GitHub
+\small When there are changes you can make a new commit
 \includegraphics[width=12cm]{Figs/GHD/outline_08}
 \end{frame}
 
+\begin{frame}[fragile]{Using the repository}
+\small An example of some small changes to this presentation
+\includegraphics[width=12cm]{Figs/GHD/outline_10}
+\end{frame}
 
 \section{Questions \& Demo}
 
@@ -526,7 +531,7 @@ Following is a brief demonstration of the interface
 \setbeamertemplate{frame footer}{(xkcd)}
 {\setbeamercolor{palette primary}{fg=gray, bg=gray}
 \begin{frame}[standout]
-\includegraphics[width=6.5cm]{Figs/xkcd_end}
+\includegraphics[width=11cm]{Figs/xkcd_end}
 \end{frame}
 }
 
