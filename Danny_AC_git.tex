@@ -76,7 +76,7 @@ Some of this is solved in programs like word with track changes (so you see who 
 \begin{frame}[fragile]{What version control systems can do}
 \begin{itemize}
 \item Give line by line changes linked to a user (which are keeped forever)
-\item Makes a stretcher to the version control so there can be side branches (this is where the project can take a detour and be merged back in later)
+\item Makes a structure to the version control so there can be side branches (this is where the project can take a detour and be merged back in later)
 \item Minimise problems of multiple users working on the same document at the same time
 \end{itemize}
 \includegraphics[width=11cm]{Figs/GHD/change}
@@ -85,7 +85,7 @@ Some of this is solved in programs like word with track changes (so you see who 
 
 \begin{frame}[fragile]{What version control systems can't do}
 \begin{itemize}
-\item Add much extra control to binary files (not plan text)
+\item Add much extra control to binary files (not plain text)
 \item Back up in real time
 \end{itemize}
 \includegraphics[width=11cm]{Figs/GHD/binarychange}
@@ -114,7 +114,7 @@ System, Storage/\\platform, UI/\\interface}
 \begin{columns}[T]
 \begin{column}{.8\textwidth}
 \begin{itemize}
-\item There are two popular version control systems (git SVN)
+\item There are two popular version control systems (git \& SVN)
 \item We will cover git as it is the most popular, the one I know and easiest to use
 \item Git was developed in 2005 by Linus Torvalds (Principal developer of Linux)
 \includegraphics[width=2cm]{Figs/Linus_Torvalds}
@@ -170,10 +170,10 @@ In the terminal interface there are some useful commands:
 \end{columns}
 \begin{itemize}
 \item \textit{init} - initialise a repo
-\item \textit{status} - tells you if you have flies out of sync with the current version
+\item \textit{status} - tells you if you have files out of sync with the current version
 \item \textit{commit} - adds commits to the current version - a change with a comment and an ID
-\item \textit{add} - adds new files and current commit
-\item \textit{remove} - removes files and current commit
+\item \textit{add} - adds new files ready to commit
+\item \textit{remove} - removes files ready to commit
 \item \textit{push} - pushes commits to an online repo (only if using a git platform)
 \item \textit{pull} - pulls commits from an online platform (only if using a git platform)
 \end{itemize}
@@ -208,12 +208,12 @@ System, Storage/\\platform, UI/\\interface}
 
 
 \begin{frame}[fragile]{Why not just store the repository on Dropbox?}
-You can and it would be baked up and sharable, but there are problems:\\
+You can and it would be backed up and sharable, but there are problems:\\
 \begin{columns}[T]
 \begin{column}{.8\textwidth}
 \begin{itemize}
 \item You can run into Dropbox syncing and git version control clashes
-\item If you share the files with a collaborator they aren’t identified separately to you
+\item If you share the files with a collaborator they aren't identified separately to you
 \item You or a collaborator can completely mess up the git system (mostly by deleting the records in the `.git' folder)
 \item If you do you can't just re download
 \end{itemize}
@@ -232,7 +232,7 @@ You can and it would be baked up and sharable, but there are problems:\\
 \begin{itemize}
 \item Allows unlimited public or private repositories
 \item Charges per collaborators over 5 on those repositories 
-\item 1GB storage for \textbf{large} flies all repositories, 5GB if using a .ac email
+\item 1GB storage for \textbf{large} files all repositories, 5GB if using a .ac email
 \end{itemize}
 \textbf{GitHub}
 \begin{itemize}
@@ -278,7 +278,7 @@ System, Storage/\\platform, UI/\\interface}
 \textbf{The Terminal\\}
 You can just use the terminal with the raw git commands as seen before... but:
 \begin{itemize}
-\item If you are not using it anyway or are happy using it a graphical UI is nice 
+\item If you are not using the terminal anyway or would rather not a graphical UI is nice 
 \item You don't need to remember commands or repo names 
 \item You need to install git for widows \url{https://git-scm.com/download/win}
 \end{itemize}
@@ -296,12 +296,12 @@ You can just use the terminal with the raw git commands as seen before... but:
 \begin{columns}[T]
 \begin{column}{.8\textwidth}
 \textbf{Git Desktop\\}
-The essayist to use and most popular UI is git desktop:
+The easiest to use and most popular UI is git desktop:
 \begin{itemize}
 \item This is made by GitHub and integrates very well with GitHub or local (on pc) repositories
 \item It will work with other hosting platforms but less easily
-\item Is the essayist to use!
-\item Will install git for widows \url{https://git-scm.com/download/win}
+\item Is the easiest to use!
+\item Will install git for windows \url{https://git-scm.com/download/win}
 \end{itemize}
 \includegraphics[width=8cm]{Figs/GHD/outline_02}
 \end{column}
@@ -320,7 +320,7 @@ The essayist to use and most popular UI is git desktop:
 \item Sourcetree is owned by atlassian who ouns Bitbucket
 \item It will work with other hosting platforms easily
 \item It has more complex controls
-\item Will install git for widows \url{https://git-scm.com/download/win}
+\item Will install git for windows \url{https://git-scm.com/download/win}
 \end{itemize}
 \includegraphics[width=8cm]{Figs/ST/ST_00} 
 \end{column}
