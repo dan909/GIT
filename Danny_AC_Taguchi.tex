@@ -168,7 +168,9 @@ The first thing about version control systems is which system (we will cover git
 	\begin{itemize}
 		\item \textit{init} - inisholies a repo
 		\item \textit{status} - tells you if you have flies out of sync with the current vertion
-		\item \textit{commit} - adds new files and changes to the current vertion
+		\item \textit{commit} - adds commits to the current vertion - a change with a comment and an ID
+		\item \textit{add} - adds new files and current commit
+		\item \textit{remove} - removes files and current commit
 		\item \textit{push} - pushes comits to an online repo (only if using a git platform)
 		\item \textit{pull} - pulls commits from an online platform (only if using a git platform)
 	\end{itemize}
@@ -179,7 +181,7 @@ The first thing about version control systems is which system (we will cover git
 \section{Platform}
 
 
-\begin{frame}[fragile]{What platform?}
+\begin{frame}[fragile]{Which platform?}
 You can just use git with the treminal on your PC or you can store work on an online reposetry mainging site, the most populer of these are GitHub and Bitbucket\\
   \begin{columns}[T]
     \begin{column}{.8\textwidth}
@@ -193,6 +195,107 @@ You can just use git with the treminal on your PC or you can store work on an on
   \end{columns}
 \end{frame}
 
+
+\begin{frame}[fragile]{Why not just store the repostry on dropbox?}
+You can and it would be baked up and sherable, but there are problems:\\
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+	\begin{itemize}
+		\item You can run into Dropbox syncing and git version control clashes
+		\item If you shere the files with a colaborator they are't identifyed separately to you
+		\item You or a colaborator can completely mess up the git system (mostly by deleating the records in the `.git' folder)
+		\item If you do you can't just re download
+	\end{itemize}
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/git/Dropbox}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]{Which platform?}
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+	\textbf{Bitbucket}
+	\begin{itemize}
+		\item Alows unlimetd public or privet repostorys
+		\item Charges per colcolaberaters over 5 on the repostorys 
+		\item 1GB stroige for large flies all repostorys, 5GB if using a .ac email
+	\end{itemize}
+	\textbf{GitHub}
+	\begin{itemize}
+		\item Has unlimeted public repostorys 
+		\item With unlimeted collaborators
+		\item Pay for privet repostorys
+		\item However as a student or academic you can sign up for free privet repostorys
+		\item Github is about $\times$4 more populer than Bitbucket
+	\end{itemize}
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/git/Bitbucket} \newline  \newline   \newline \newline 
+	\includegraphics[width=2cm]{Figs/git/Octocat}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+
+\section{UI}
+
+
+\begin{frame}[fragile]{Which UI?}
+You can just use git with the treminal but there is a frendlyer interfase\\
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+	\smartdiagram[bubble diagram]{Effective\\ version\\ control,
+ 	System, Storage/\\platform, UI/\\interface}
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/git/terminal} \newline  \newline   \newline 
+	\includegraphics[width=2cm]{Figs/git/gitdesktop} \newline  \newline   \newline 
+	\includegraphics[width=2cm]{Figs/git/Sourcetree}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]{Which UI?}
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+  	\textbf{The Terminal\\}
+	You can just use the termainal with the raw git commands as seen before... but:
+	\begin{itemize}
+		\item If you are not using it enyway or are happy using it a graphical UI is nice 
+		\item You don't need to remember commands or reposty names 
+	\end{itemize}
+	\includegraphics[width=6cm]{Figs/git/terminaluse}
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/git/terminal} \newline  \newline  \newline 
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Which UI?}
+  \begin{columns}[T]
+    \begin{column}{.8\textwidth}
+  	\textbf{Git Desktop\\}
+	The easyist to use and most populer UI is git desktop:
+	\begin{itemize}
+		\item This is made by github and intigrates very well with github or local (on pc) reposotrys
+		\item It will work with other hosting platforms but less easly
+		\item It will work with other hosting platforms but less easly
+	\end{itemize}
+	\includegraphics[width=6cm]{Figs/git/terminaluse}
+    \end{column}
+    \begin{column}{.2\textwidth}
+	\includegraphics[width=2cm]{Figs/git/gitdesktop} \newline  \newline  \newline 
+    \end{column}
+  \end{columns}
+\end{frame}
 
 
 
